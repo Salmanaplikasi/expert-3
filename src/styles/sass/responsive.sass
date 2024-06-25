@@ -1,0 +1,135 @@
+@import 'main'
+
+
+@media screen and (max-width: $breakpoint-extra-large)
+    header
+        height: 80px
+
+        h1
+            font-size: 40px
+
+        .nav-list
+            gap: 40px
+
+            .nav-list__item a
+                font-size: 18px
+
+    .hero-container
+        gap: 1.5rem
+
+        h2
+            font-size: 55px
+
+        p
+            font-size: 20px
+
+        button
+            padding: 12px 24px
+            min-height: 44px
+            min-width: 44px
+
+    #explore-restaurant
+        h3
+            font-size: 30px
+            padding-top: 1rem
+
+@media screen and (max-width: $breakpoint-large)
+    header
+        height: 70px
+
+        h1
+            font-size: 35px
+
+        .nav-list
+            gap: 30px
+
+            .nav-list__item a
+                font-size: 16px
+
+    .hero-container
+        min-height: 60dvh
+        gap: 1.4rem
+
+        h2
+            font-size: 50px
+
+            p
+                font-size: 18px
+
+            button
+                padding: 10px 20px
+                min-height: 44px
+                min-width: 44px
+
+            #explore-restaurant
+                h3
+                    font-size: 28px
+
+@media screen and (max-width: $breakpoint-medium)
+    #popupContainer
+        top: 0
+        left: 0
+        transform: translate(0, 0)
+        overflow: hidden
+
+
+@media screen and (max-width: $breakpoint-small)
+    header
+        h1
+            font-size: 30px
+            margin-left: 24px
+
+        .hamburger
+            display: block
+            background-color: $on-primary-color
+            border: none
+            margin-left: auto
+            margin-right: 24px
+            width: 44px
+            height: 44px
+            cursor: pointer
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 5px
+
+        nav
+            z-index: 999
+            position: absolute
+            top: 70px
+            right: 100%
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+            transition: left 1s ease
+            justify-content: flex-end
+            padding: 3rem 2rem
+
+        .open
+            right: 0
+            background: $secondary-color
+            border-radius: 20px 0px 0px 20px
+
+            .nav-list
+                display: block
+                text-align: right
+
+            .nav-list__item
+                padding: 1rem 1rem
+                border-bottom: 1px solid $primary-color
+                font-weight: bold
+                width: 100%
+
+    .hero-container
+        gap: 1rem
+        max-height: 50dvh
+
+
+        h2
+            font-size: 30px
+
+        p
+            font-size: 14px
+
+            button
+                padding: 8px 16px
+                min-height: 44px
+                min-width: 44px

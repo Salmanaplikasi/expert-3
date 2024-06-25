@@ -1,0 +1,52 @@
+@import 'main'
+
+header
+    background-color: $secondary-color
+    height: 100px
+    font-weight: bold
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+    .hamburger
+        cursor: pointer
+        display: none
+        color: $secondary-color !important
+
+    nav
+        display: flex
+        align-items: center
+
+        .brand-container
+            display: flex
+            align-items: center
+
+            h1
+                font-size: 50px
+                font-weight: bold
+                cursor: pointer
+
+        ul
+            gap: 4rem
+            display: flex
+            justify-content: center
+            align-items: center
+
+            li
+                list-style: none
+
+                a
+                    text-decoration: none
+                    color: $on-secondary-color
+                    font-size: 20px
+                    min-width: 44px
+                    min-height: 44px
+                    display: inline-block
+                    text-align: center
+                    line-height: 44px
+                    transition: color 0.3s ease
+
+                    &:hover
+                        color: $outline-color
+
+    

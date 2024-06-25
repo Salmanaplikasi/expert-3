@@ -1,0 +1,82 @@
+@import 'main'
+
+#explore-restaurant
+    h3
+        padding-top: 1rem
+        text-align: center
+        font-size: 36px
+        font-weight: bold
+        color: $secondary-color
+
+#explore-restaurant__list
+    color: $on-background-color
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 24 0 24 24
+    margin-bottom: 36px
+
+.restaurant-card
+    background-color: $surface-variant
+    color: $on-background-color
+    border-radius: 10px
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+    padding: 20px
+    margin: 20px
+    transition: transform 0.3s ease
+    width: calc(33.33% - 40px)
+    min-height: 300px
+    max-height: 350px
+    min-width: 300px
+    max-width: 400px
+    cursor: pointer
+
+    a 
+        text-decoration: none
+        color: $on-background-color
+    
+    &:hover
+        transform: translateY(-5px)
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1)
+
+    .restaurant-card__image
+        position: relative
+        border-radius: 10px
+        overflow: hidden
+        height: 200px
+
+        .restaurant-card__image__item
+            width: 100%
+            height: auto
+
+        .restaurant-card__image__rating
+            position: absolute
+            top: 10px
+            right: 10px
+            background-color: rgba(255, 255, 255, 0.8)
+            padding: 5px 10px
+            border-radius: 5px
+            display: flex
+            align-items: center
+
+            i
+                color: gold
+                margin-right: 5px
+
+    .restaurant-card__content
+        margin-top: 20px
+        color: $on-background-color
+
+        .restaurant-card__content__title
+            font-size: 18px
+            font-weight: bold
+            margin-bottom: 10px
+
+        .restaurant-card__content__description
+            font-size: 14px
+            overflow: hidden
+            text-overflow: ellipsis
+            display: -webkit-box
+            -webkit-line-clamp: 3
+            -webkit-box-orient: vertical
